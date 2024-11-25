@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Registro de Despesas</title>
+</head>
+<body>  
+    <header class="h-10 p-2 bg-blue-500 flex gap-3">
+        <img src="logo.png" alt="logo">
+        <p class="text-white"><a href="">Cadastro</a></p>
+        <p class="text-slate-700 hover:text-white"><a href="">Consulta</a></p>
+    </header>
+    <main class="w-5/6 mt-5 m-auto flex flex-col gap-5">
+        
+        <h1 class="text-3xl text-center font-semibold">Registro de nova despesa</h1>
+        
+        <div class="md:flex-row flex flex-col items-center gap-3">
+            
+            <select name="Ano" id="ano" class="w-3/4 h-8 rounded-xl text-center sombra focus:border-solid focus:border-[1px] focus:border-black">
+                <option value="">Ano</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+            </select>
+            
+            <select name="Mes" id="mes" class="w-3/4 h-8 rounded-xl text-center sombra focus:border-solid focus:border-[1px] focus:border-black">
+                <option value="">Mês</option>
+                <option value="Janeiro">Janeiro</option>
+                <option value="Fevereiro">Fevereiro</option>
+                <option value="Março">Março</option>
+                <option value="Abril">Abril</option>
+                <option value="Maio">Maio</option>
+                <option value="Junho">Junho</option>
+                <option value="Julho">Julho</option>
+                <option value="Agosto">Agosto</option>
+                <option value="Setembro">Setembro</option>
+                <option value="Outubro">Outubro</option>
+                <option value="Novembro">Novembro</option>
+                <option value="Dezembro">Dezembro</option>
+            </select>
+            
+            <input type="number" name="dia" id="dia" placeholder="Dia" class="w-3/4 h-8 rounded-xl text-center sombra focus:border-solid focus:border-[1px] focus:border-black">
+            
+            <select name="tipo" id="tipo" class="w-3/4 h-8 rounded-xl text-center sombra focus:border-solid focus:border-[1px] focus:border-black">
+                <option value="">Tipo</option>
+                <option value="alimentacao">Alimentação</option>
+                <option value="educacao">Educação</option>
+                <option value="lazer">Lazer</option>
+                <option value="saude">Saúde</option>
+                <option value="transporte">Transporte</option>
+            </select>
+
+        </div>
+        <div class="md:flex-row flex flex-col items-center gap-3">
+            <input type="text" placeholder="Descrição" class="w-3/4 h-8 rounded-xl text-center sombra focus:border-solid focus:border-[1px] focus:border-black">
+            <input type="number" placeholder="Valor" class="w-3/4 h-8 rounded-xl text-center sombra focus:border-solid focus:border-[1px] focus:border-black">
+            <button type="submit" name="adicionar">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#0469ec80" class="size-12">
+                    <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 9a.75.75 0 0 0-1.5 0v2.25H9a.75.75 0 0 0 0 1.5h2.25V15a.75.75 0 0 0 1.5 0v-2.25H15a.75.75 0 0 0 0-1.5h-2.25V9Z" clip-rule="evenodd" />
+                </svg>
+            </button>
+        </div>
+    </main>
+</body>
+</html>
